@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Mahjong Colored";
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+.tenbo {
+  width: 156px;
+  height: 12px;
+}
+
+.rotate {
+  width: 40px;
+  height: 56px;
+  margin: 0 7px;
+  transform: rotate(-90deg) translate(-8px, 0);
+}
+
+@font-face {
+  font-family: "Mahjong Colored";
+  src: url("./mahjong_colored_custom.otf");
+  unicode-range: "U+1F000-1F021, U+1F02C-1F02E";
+}
+
+.mahjong-font {
+  font-family: "Mahjong Colored";
+  font-size: 2.5rem;
+  /* letter-spacing: -10px; */
+}
+
+.pon {
+  display: inline-block;
+  transform: rotate(-90deg) translate(-0.13em, 0);
+  margin: 0 -0.125em 0 0.1em;
+}
+
+.kan {
+  font-family: "Mahjong Colored";
+  display: inline-block;
+  transform: rotate(-90deg) translate(0.24em, 0);
+  margin: 0.4em -0.5em 0 -0.26em;
+}
+
+.borderFocus {
+  border: 1px solid rgba(126, 126, 126, 0.7);
+  border-radius: 6px;
+}
+
+.borderFocus:focus-within {
+  border: 1px solid steelblue;
+}
+
+.editable {
+  /* border: 1px solid rgba(126, 126, 126, 0.7); */
+  border: none;
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  transition: 200ms;
+  overflow-wrap: break-word;
+  min-width: 8rem;
+}
+
+.editable:focus {
+  /* border: 1px solid steelblue; */
+  outline: 0;
+}
+
+.editable:empty:before {
+  content: "Ex:🀜🀝🀟🀠🀡🀑🀒🀓🀖🀗🀘🀂🀂";
+  opacity: 0.4;
+  cursor: text;
+}
+
+.bg-color {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.input-dora {
+  width: 145px;
+  height: 60px;
+}
+/* 
+@media screen and (max-width: 1200px) {
+  .editable {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .editable {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .editable {
+    font-size: 1em;
+  }
+}
+ */
+
+.tsumogiri {
+  filter: brightness(0.8);
+}
+
+.destaque {
+  filter: sepia(0.4) saturate(2);
+}
+
+.borduxa {
+  border: 5px solid orange;
+  border-radius: 10px;
+}
