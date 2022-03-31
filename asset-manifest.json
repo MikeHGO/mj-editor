@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mj-maker/static/css/main.40692b85.css",
+    "main.js": "/mj-maker/static/js/main.42fda418.js",
+    "static/media/mahjong_colored_custom.otf": "/mj-maker/static/media/mahjong_colored_custom.3e9b07180266236b520a.otf",
+    "index.html": "/mj-maker/index.html",
+    "main.40692b85.css.map": "/mj-maker/static/css/main.40692b85.css.map",
+    "main.42fda418.js.map": "/mj-maker/static/js/main.42fda418.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40692b85.css",
+    "static/js/main.42fda418.js"
+  ]
+}
