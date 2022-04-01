@@ -184,7 +184,6 @@ function App() {
               html={contentValue}
               onChange={(e) => setContentValue(e.target.value)}
               className={`editable mahjong-font `}
-              inputMode={"none"}
               style={{
                 fontSize: `${fontSize}rem`,
                 color: `${textColor.hex}`,
