@@ -1,6 +1,6 @@
 {
-  "homepage": "http://MikeHGO.github.io/mj-maker",
-  "name": "mj-maker",
+  "homepage": "http://MikeHGO.github.io/mj-editor",
+  "name": "mj-editor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
