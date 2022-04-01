@@ -9,7 +9,9 @@ import {
   TextIncrease,
 } from "@mui/icons-material";
 import {
+  Container,
   Divider,
+  Link,
   Popover,
   ToggleButton,
   ToggleButtonGroup,
@@ -36,11 +38,10 @@ function App() {
   const [textColor, setTextColor] = useColor("hex", "#000000");
   const [textColorAnchor, setTextColorAnchor] = useState(null);
   const [bgColor, setBgColor] = useColor("hex", "#b0c4de00");
-  console.log("🚀 ~ file: App.js ~ line 45 ~ App ~ bgColor", bgColor);
   const [bgColorAnchor, setBgColorAnchor] = useState(null);
 
   return (
-    <>
+    <Container maxWidth="xl" sx={{ marginBottom: "2rem" }}>
       <Typography
         variant="h3"
         align="center"
@@ -204,7 +205,40 @@ function App() {
         <MJTitlePicker />
       </Box>
       <DownloadSection canvasRef={canvasRef} color={bgColor.rgb} />
-    </>
+      <Container maxWidth="sm">
+        <Typography
+          variant="subtitle1"
+          sx={{
+            border: "2px solid crimson",
+            p: 1,
+            borderRadius: "6px",
+          }}
+          textAlign="justify"
+        >
+          Warning: This application uses an OpenType-SVG font, check{" "}
+          <Link href="https://pixelambacht.nl/chromacheck/">HERE</Link> if your
+          browser has support.{" "}
+          <Link href="https://www.mozilla.org/firefox/browsers/">FIREFOX</Link>{" "}
+          browser is recommended.
+        </Typography>
+        <Typography variant="h6" textAlign="center">
+          ----------Tips----------
+        </Typography>
+        <Typography variant="subtitle1" textAlign={"justify"}>
+          SVG has smaller size than JPEG and has transparency if the background
+          was unchanged.
+          <br />
+          Insert another tile after a "tilted" one to help getting the correct
+          position back, you can delete it afterwards.
+        </Typography>
+        <ContentEditable
+          html='<div>🀙🀙<span class="pon">🀙</span>&nbsp; &gt; 🀙🀙<span class="pon">🀙no</span><br></div><div><br></div><div>🀙🀙<span class="kan">🀙🀙</span> 🀙 &gt; 🀙🀙<span class="kan">🀙🀙</span>&nbsp; yes</div>'
+          disabled={true}
+          className={`editable mahjong-font `}
+          style={{ fontSize: "1.5rem", textAlign: "center" }}
+        />
+      </Container>
+    </Container>
   );
 }
 

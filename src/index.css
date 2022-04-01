@@ -85,8 +85,8 @@ body {
   width: 145px;
   height: 60px;
 }
-/* 
-@media screen and (max-width: 1200px) {
+
+/* @media screen and (max-width: 1200px) {
   .editable {
     font-size: 2em;
   }
@@ -102,8 +102,7 @@ body {
   .editable {
     font-size: 1em;
   }
-}
- */
+} */
 
 .tsumogiri {
   filter: brightness(0.8);

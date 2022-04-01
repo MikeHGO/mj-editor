@@ -122,13 +122,13 @@ const MJTitlePicker = () => {
           </span>
         </ToggleButton>
       </ToggleButtonGroup>
-      <Box sx={{ width: "455px" }}>
+      <Box sx={{ maxWidth: "455px" }}>
         {mjtitles.map((item) => (
           <Button
             variant="text"
             key={item}
             size="large"
-            onMouseDown={(e) => handleClick(e, item)}
+            onClick={(e) => handleClick(e, item)}
             sx={{
               padding: "0",
               minWidth: "45px",
