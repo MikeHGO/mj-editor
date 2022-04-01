@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mj-editor/static/css/main.8f48c91c.css",
-    "main.js": "/mj-editor/static/js/main.7cadc27e.js",
+    "main.js": "/mj-editor/static/js/main.a87d8f7f.js",
     "static/media/mahjong_colored_custom.otf": "/mj-editor/static/media/mahjong_colored_custom.3e9b07180266236b520a.otf",
     "index.html": "/mj-editor/index.html",
     "main.8f48c91c.css.map": "/mj-editor/static/css/main.8f48c91c.css.map",
-    "main.7cadc27e.js.map": "/mj-editor/static/js/main.7cadc27e.js.map"
+    "main.a87d8f7f.js.map": "/mj-editor/static/js/main.a87d8f7f.js.map"
   },
   "entrypoints": [
     "static/css/main.8f48c91c.css",
-    "static/js/main.7cadc27e.js"
+    "static/js/main.a87d8f7f.js"
   ]
 }
